@@ -10,7 +10,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8082/"
-        : "https://craveplus.site/rotator/", // Production
+        : "https://micro-rotator.vercel.app/", // Production
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -54,7 +54,8 @@ module.exports = (_, argv) => ({
       name: "rotator",
       filename: "remoteEntry.js",
       remotes: {
-        host: "host@http://localhost:8080/remoteEntry.js",
+        // host: "host@http://localhost:8080/remoteEntry.js",
+        host: "host@https://micro-host-self.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./Rotator": "./src/components/Rotator",
