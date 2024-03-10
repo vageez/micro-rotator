@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/rotator/(.*)",
+            "destination": "/$1"
+        }
+    ]
+}
