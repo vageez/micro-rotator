@@ -1,6 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "./SwiperInit";
 import { Link } from "react-router-dom";
+import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
 const image1 =
   "https://images2.9c9media.com/image_asset/2013_10_11_048fc1c0-14d0-0131-bf56-34b52f6f1279_jpg_680x1000.jpg";
 const image2 =
